@@ -250,6 +250,42 @@ body {
                         color: #fff;
                     }
                 }
+                .discord{
+                    &:hover{
+                        background-color: #404eed;
+                        color: #fff;
+                    }
+                }
+                .facebook{
+                    &:hover{
+                        background-color: #1877f2;
+                        color: #fff;
+                    }
+                }
+                .spotify{
+                    &:hover{
+                        background-color: #1ed760;
+                        color: #fff;
+                    }
+                }
+                .twitch{
+                    &:hover{
+                        background-color: #9147ff;
+                        color: #fff;
+                    }
+                }
+                .twitter{
+                    &:hover{
+                        background-color: #1d9bf0;
+                        color: #fff;
+                    }
+                }
+                .youtube{
+                    &:hover{
+                        background-color: #f00;
+                        color: #fff;
+                    }
+                }
                 
             }
         }
@@ -257,13 +293,14 @@ body {
     }
     .derechos{
         display: flex;
-        width: ;
         background-color: #0d0d0d;
         color: #ccc;
-        justify-content: space-between;
+        justify-content: center;
         ul{
             display:flex ;
+            padding: 0px 40px;
             li{
+                padding: 0px 5px;
                 a{
                     color:#ccc;
                 }

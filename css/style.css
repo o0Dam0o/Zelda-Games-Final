@@ -270,16 +270,50 @@ body img {
   color: #fff;
 }
 
+.footer .redes ul li .discord:hover {
+  background-color: #404eed;
+  color: #fff;
+}
+
+.footer .redes ul li .facebook:hover {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.footer .redes ul li .spotify:hover {
+  background-color: #1ed760;
+  color: #fff;
+}
+
+.footer .redes ul li .twitch:hover {
+  background-color: #9147ff;
+  color: #fff;
+}
+
+.footer .redes ul li .twitter:hover {
+  background-color: #1d9bf0;
+  color: #fff;
+}
+
+.footer .redes ul li .youtube:hover {
+  background-color: #f00;
+  color: #fff;
+}
+
 .footer .derechos {
   display: flex;
-  width: %;
   background-color: #0d0d0d;
   color: #ccc;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer .derechos ul {
   display: flex;
+  padding: 0px 40px;
+}
+
+.footer .derechos ul li {
+  padding: 0px 5px;
 }
 
 .footer .derechos ul li a {
