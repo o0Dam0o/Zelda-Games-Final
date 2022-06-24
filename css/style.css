@@ -27,34 +27,37 @@ body img {
   width: 100%;
   max-width: 100%;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.25em;
+  grid-template-columns: 1fr 1fr auto;
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header			header   	header" "destacado		destacado 	destacado" "contenido		contenido 	aside" "footer	 		footer 		footer";
+  grid-template-areas: "header			header   	header"
+ "destacado		destacado 	destacado"
+ "contenido		contenido 	aside"
+ "footer	 		footer 		footer";
 }
 
 /* ---------- HEADER ----------*/
 .header {
   grid-area: header;
-  padding: 20px;
+  padding: 1.25em;
   background: #fff;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
 
 .header .logo {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 3px;
 }
 
 .header .logo .logo-img {
-  height: 70px;
+  height: 4.375em;
   object-fit: none;
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 1.875em;
 }
 
 .header .menu {
@@ -65,7 +68,7 @@ body img {
 }
 
 .header .menu a {
-  padding: 10px;
+  padding: 0.625rem;
   color: #000;
   display: block;
   text-decoration: none;
@@ -74,7 +77,7 @@ body img {
   width: 100%;
   text-align: center;
   transition: 0.2s ease all;
-  font-size: 16px;
+  font-size: 1.125rem;
 }
 
 .header .menu a:hover {
@@ -155,7 +158,7 @@ body img {
 
 .articulo .contenedor-texto .titulo {
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 1.5625em;
 }
 
 .articulo .contenedor-texto .titulo a {
@@ -164,16 +167,16 @@ body img {
 }
 
 .articulo .contenedor-texto .subTitulo {
-  font-size: 16px;
+  font-size: 1em;
   color: #868b8d;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .articulo .contenedor-texto .extracto {
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.25em;
+  line-height: 1.5625rem;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   color: #868b8d;
 }
 
@@ -182,14 +185,14 @@ body img {
   grid-area: contenido;
   display: grid;
   grid-template-columns: 1;
-  grid-gap: 20px;
+  grid-gap: 1.25rem;
 }
 
 /*---------- SIDEBAR ----------*/
 .sidebar {
-  padding: 5em 25px;
+  padding: 5em 1.5625em;
   text-align: center;
-  min-height: 100px;
+  min-height: 6.25rem;
   grid-area: aside;
   background: #000;
   color: #868b8d;
@@ -200,13 +203,13 @@ body img {
   border-radius: 100%;
   height: 4.7em;
   width: 4.7em;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 .sidebar .acerca-de .bio {
-  margin-bottom: 25px;
-  font-size: 20px;
-  line-height: 25px;
+  margin-bottom: 1.5625rem;
+  font-size: 1.25em;
+  line-height: 1.5625rem;
 }
 
 .sidebar .acerca-de iframe {
@@ -220,7 +223,7 @@ body img {
 }
 
 .sidebar .menu a {
-  padding: 25px;
+  padding: 1.5625rem;
   color: #fff;
   background-color: #000;
   display: block;
@@ -235,15 +238,16 @@ body img {
 /*---------- FOOTER ----------*/
 .footer {
   background: #fff;
-  font-size: 20px;
+  font-size: 15px;
   grid-area: footer;
-  padding: 25px;
+  padding: 1.5625rem;
   text-align: right;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
 
 .footer .logo-img {
-  height: 70px;
+  margin-top: -2.125rem;
+  height: 4.375rem;
   object-fit: none;
 }
 
@@ -253,7 +257,7 @@ body img {
 }
 
 .footer .redes ul li a {
-  padding: 10px;
+  padding: 0.625rem;
   color: #000;
   display: block;
   text-decoration: none;
@@ -262,7 +266,7 @@ body img {
   width: 100%;
   text-align: center;
   transition: 0.2s ease all;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .footer .redes ul li a:hover {
@@ -302,20 +306,29 @@ body img {
 
 .footer .derechos {
   display: flex;
-  background-color: #0d0d0d;
-  color: #ccc;
+  margin-top: 0.625rem;
+  margin-bottom: -1.5625rem;
+  margin-left: -1.5625rem;
+  margin-right: -1.5625rem;
+  background-color: #000;
+  color: #fcfcfc;
   justify-content: center;
+  font-size: 0.91rem;
 }
 
 .footer .derechos ul {
   display: flex;
-  padding: 0px 40px;
+  padding: 0rem 2.5rem;
 }
 
 .footer .derechos ul li {
-  padding: 0px 5px;
+  padding: 0rem 0.3125rem;
 }
 
 .footer .derechos ul li a {
-  color: #ccc;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+
 }

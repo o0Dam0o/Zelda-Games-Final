@@ -23,8 +23,8 @@ body {
 	width: 100%;
 	max-width: 100%;
 	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.25em;
+	grid-template-columns: (1fr 1fr auto);
 	grid-template-rows: repeat(4, auto);
 	grid-template-areas:
 		"header			header   	header"
@@ -36,20 +36,20 @@ body {
 /* ---------- HEADER ----------*/
 .header {
 	grid-area: header;
-	padding: 20px;
+	padding: 1.25em;
 	background: #fff;
 	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
     .logo {
-        margin-bottom: 20px;
+        margin-bottom: 1.25em;
         text-transform: uppercase;
         text-align: center;
         letter-spacing: 3px;
         .logo-img{
-            height: 70px;
+            height: 4.375em;
             object-fit: none;
         }
         h1 {
-            font-size: 30px;
+            font-size: 1.875em;
         }
     }
     .menu {
@@ -58,7 +58,7 @@ body {
         display: flex;
         justify-content: space-between;
         a {
-            padding: 10px;
+            padding: 0.625rem;
             color: #000;
             display: block;
             text-decoration: none;
@@ -67,7 +67,7 @@ body {
             width: 100%;
             text-align: center;
             transition: 0.2s ease all;
-            font-size: 16px;
+            font-size: 1.125rem;
             &:hover{
                 background: #000;
                 color: #fff;
@@ -143,22 +143,22 @@ body {
         width: 100%;
         .titulo {
             margin-bottom: 10px;
-            font-size: 25px;
+            font-size: 1.5625em;
             a {
                 font-weight: 400;
                 color: #000;
             }
         }
         .subTitulo {
-            font-size: 16px;
+            font-size: 1em;
             color: #868b8d;
-            margin-bottom: 10px;
+            margin-bottom: 0.625rem;
         }
         .extracto {
-            font-size: 20px;
-            line-height: 25px;
+            font-size: 1.25em;
+            line-height: 1.5625rem;
             font-weight: 300;
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
             color: #868b8d;
         }
     }
@@ -170,15 +170,15 @@ body {
 	grid-area: contenido;
 	display: grid;
 	grid-template-columns: 1;
-	grid-gap: 20px;
+	grid-gap: 1.25rem;
 }
 
 /*---------- SIDEBAR ----------*/
 
 .sidebar {
-	padding: 5em 25px;
+	padding: 5em 1.5625em;
 	text-align: center;
-	min-height: 100px;
+	min-height: 6.25rem;
 	grid-area: aside;
 	background: #000;
 	color: #868b8d;
@@ -188,12 +188,12 @@ body {
             border-radius: 100%;
             height: 4.7em;
             width: 4.7em;
-            margin-bottom: 25px;
+            margin-bottom: 1.5625rem;
         }
         .bio {
-            margin-bottom: 25px;
-            font-size: 20px;
-            line-height: 25px;
+            margin-bottom: 1.5625rem;
+            font-size: 1.25em;
+            line-height: 1.5625rem;
         }
         iframe{
             border-radius: 5%;
@@ -204,7 +204,7 @@ body {
         display: inline-block;
         background: #ccc;
         a{
-            padding: 25px;
+            padding: 1.5625rem;
             color: #fff;
             background-color: #000;
             display: block;
@@ -220,13 +220,14 @@ body {
 /*---------- FOOTER ----------*/
 .footer {
 	background: #fff;
-	font-size: 20px;
+	font-size: 15px;
 	grid-area: footer;
-	padding: 25px;
+	padding: 1.5625rem;
 	text-align: right;
 	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
     .logo-img{
-        height: 70px;
+        margin-top: -2.125rem;
+        height: 4.375rem;
         object-fit: none;
     }
     .redes{
@@ -235,7 +236,7 @@ body {
             justify-content: center;
             li{
                 a{
-                    padding: 10px;
+                    padding: 0.625rem;
                     color: #000;
                     display: block;
                     text-decoration: none;
@@ -244,7 +245,7 @@ body {
                     width: 100%;
                     text-align: center;
                     transition: 0.2s ease all;
-                    font-size: 16px;
+                    font-size: 1rem;
                     &:hover{
                         background-color: #000;
                         color: #fff;
@@ -293,18 +294,26 @@ body {
     }
     .derechos{
         display: flex;
-        background-color: #0d0d0d;
-        color: #ccc;
+        margin-top: 0.625rem;
+        margin-bottom: -1.5625rem;
+        margin-left: -1.5625rem;
+        margin-right: -1.5625rem;
+        background-color: #000;       
+        color: rgb(252, 252, 252);
         justify-content: center;
+        font-size: 0.91rem;
         ul{
             display:flex ;
-            padding: 0px 40px;
+            padding: 0rem 2.5rem;
             li{
-                padding: 0px 5px;
+                padding: 0rem 0.3125rem;
                 a{
-                    color:#ccc;
+                    color:rgb(255, 255, 255);
                 }
             }
         }        
     }
 }
+@media (max-width: 1440px){
+
+}   
