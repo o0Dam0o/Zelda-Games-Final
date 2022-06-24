@@ -30,10 +30,7 @@ body img {
   grid-gap: 1.25em;
   grid-template-columns: 1fr 1fr auto;
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header			header   	header"
- "destacado		destacado 	destacado"
- "contenido		contenido 	aside"
- "footer	 		footer 		footer";
+  grid-template-areas: "header			header   	header" "destacado		destacado 	destacado" "contenido		contenido 	aside" "footer	 		footer 		footer";
 }
 
 /* ---------- HEADER ----------*/
@@ -212,27 +209,34 @@ body img {
   line-height: 1.5625rem;
 }
 
-.sidebar .acerca-de iframe {
-  border-radius: 5%;
-}
-
-.sidebar .menu {
-  width: 100%;
+.sidebar .menu.mapa {
   display: inline-block;
   background: #ccc;
 }
 
-.sidebar .menu a {
+.sidebar .menu.mapa a {
   padding: 1.5625rem;
   color: #fff;
   background-color: #000;
   display: block;
-  font-size: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
-.sidebar .menu a:hover {
+.sidebar .menu.mapa a:hover {
   background: #262626;
+}
+
+.sidebar .mapa {
+  width: 37.5em;
+  height: 25em;
+  border-radius: 5%;
+}
+
+.sidebar .mapa iframe {
+  width: inherit;
+  height: inherit;
+  border-radius: 5%;
 }
 
 /*---------- FOOTER ----------*/
@@ -330,5 +334,44 @@ body img {
 }
 
 @media (max-width: 1440px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr 0.1fr;
+  }
+  .contenedor .mapa {
+    font-size: 60%;
+  }
+}
 
+@media (max-width: 1024px) {
+  .contenedor {
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header			header   	header" "destacado		destacado 	destacado" "contenido		contenido 	contenido" "aside aside aside" "footer	 		footer 		footer";
+  }
+  .sidebar .acerca-de {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .articulo.destacado {
+    grid-area: destacado;
+    color: white;
+    background-color: #000;
+    box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .articulo.destacado .contenedor-thumbnail {
+    min-height: 100%;
+    width: 100%;
+  }
+  .articulo.destacado .contenedor-thumbnail a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  .articulo.destacado img {
+    grid-template-rows: span/1;
+  }
 }
