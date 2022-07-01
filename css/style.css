@@ -78,7 +78,6 @@ body img {
   padding: 0.625rem;
   color: #000;
   display: block;
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
   width: 100%;
@@ -95,7 +94,7 @@ body img {
 /* ---------- Articulo Destacado ----------*/
 .articulo.destacado {
   grid-area: destacado;
-  color: white;
+  color: #fff;
   background-color: #000;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
   display: grid;
@@ -114,14 +113,14 @@ body img {
 }
 
 .destacado .titulo-destacado a {
-  color: white;
+  color: #fff;
 }
 
 .destacado .titulo-destacado::after {
   content: '';
   margin: 0.625em 0;
   display: block;
-  background-color: #868686;
+  background-color: #868b8d;
   width: 6em;
   height: 1px;
 }
@@ -221,7 +220,6 @@ body img {
 
 .sidebar .menu.mapa {
   display: inline-block;
-  background: #ccc;
 }
 
 .sidebar .menu.mapa a {
@@ -274,47 +272,46 @@ body img {
   padding: 0.625rem;
   color: #000;
   display: block;
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: 400;
   width: 100%;
   text-align: center;
   transition: 0.2s ease all;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 .footer .redes ul li a:hover {
-  background-color: #000;
+  background: #000;
   color: #fff;
 }
 
 .footer .redes ul li .discord:hover {
-  background-color: #404eed;
+  background: #404eed;
   color: #fff;
 }
 
 .footer .redes ul li .facebook:hover {
-  background-color: #1877f2;
+  background: #1877f2;
   color: #fff;
 }
 
 .footer .redes ul li .spotify:hover {
-  background-color: #1ed760;
+  background: #1ed760;
   color: #fff;
 }
 
 .footer .redes ul li .twitch:hover {
-  background-color: #9147ff;
+  background: #9147ff;
   color: #fff;
 }
 
 .footer .redes ul li .twitter:hover {
-  background-color: #1d9bf0;
+  background: #1d9bf0;
   color: #fff;
 }
 
 .footer .redes ul li .youtube:hover {
-  background-color: #f00;
+  background: #f00;
   color: #fff;
 }
 
@@ -325,7 +322,7 @@ body img {
   margin-left: -1.5625rem;
   margin-right: -1.5625rem;
   background-color: #000;
-  color: #fcfcfc;
+  color: #fff;
   justify-content: center;
   font-size: 0.91rem;
 }
@@ -340,7 +337,7 @@ body img {
 }
 
 .footer .derechos ul li a {
-  color: white;
+  color: #fff;
 }
 
 @media (max-width: 1440px) {
@@ -401,7 +398,7 @@ body img {
     width: 100%;
     bottom: 150%;
     left: 0%;
-    background-color: white;
+    background-color: #fff;
     clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
     transition: clip-path 1s ease-in-out;
   }
@@ -421,6 +418,9 @@ body img {
   }
   .sidebar .acerca-de {
     display: block;
+  }
+  .sidebar .mapa {
+    width: auto;
   }
   .articulo {
     display: block;
