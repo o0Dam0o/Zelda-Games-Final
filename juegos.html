@@ -11,7 +11,7 @@
 		<script src="https://kit.fontawesome.com/60e48e9ebc.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div class="contenedor">
+		<div class="contenedorJ">
 			<header class="header">
 				<div class="logo">
 					<img class="logo-img" src="./img/Zelda-Logo.png" alt="logo-zelda-games">
@@ -29,29 +29,19 @@
 					<a href="#">Contacto</a>
 				</nav>
 			</header>
-			<nav>
-                <div>
-                    <h3>Filtros</h3>
-                </div>
-                <div>
-                    <input type="radio" name="" id="">
-                    <label for="">
-                        Jugar en
-                    </label>
-                    <div>
+			<nav class="nav-juegos">
+                <div class="nav-filtros">
+                    <h3 class="nav-titulo">Filtros</h3>
+                    <details class="nav-acordion">
+                        <summary>Jugar en</summary>
                         <ul>
                             <li><a href="#">PC</a></li>
                             <li><a href="#">PS5</a></li>
                             <li><a href="#">Xbox</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div>
-                    <input type="radio" name="" id="">
-                    <label for="">
-                        Genero
-                    </label>
-                    <div>
+                    </details>
+                    <details class="nav-acordion">
+                        <summary>Genero</summary>
                         <ul>
                             <li><a href="#">Accion y Aventura</a></li>
                             <li><a href="#">Lucha</a></li>
@@ -63,28 +53,18 @@
                             <li><a href="#">Deporte</a></li>
                             <li><a href="#">Estrategia</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div>
-                    <input type="radio" name="" id="">
-                    <label for="">
-                        Caracteristicas
-                    </label>
-                    <div>
+                    </details>
+                    <details class="nav-acordion">
+                        <summary>Caracteristicas</summary>
                         <ul>
                             <li><a href="#">4K</a></li>
                             <li><a href="#">Multijugador</a></li>
                             <li><a href="#">Primera Persona</a></li>
                             <li><a href="#">HDR</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div>
-                    <input type="radio" name="" id="">
-                    <label for="">
-                        Edad
-                    </label>
-                    <div>
+                    </details>
+                    <details class="nav-acordion">
+                        <summary>Edad</summary>
                         <ul>
                             <li><a href="#">3+</a></li>
                             <li><a href="#">7+</a></li>
@@ -92,101 +72,219 @@
                             <li><a href="#">16+</a></li>
                             <li><a href="#">18+</a></li>
                         </ul>
-                    </div>
+                    </details>
+
                 </div>
+
             </nav>
-            <main>
-                <div>
-                    <h2>Todos Los juegos</h2>
+            <main class="main-juegos">
+                <div class="main-titulo">
+                    <h2>Todos los juegos</h2>
                 </div>
-                <article>
-                    <div>
-                        <a href=""><img src="/img/juego1.jpg" alt=""></a>
-                    </div>
-                    <div>
-                        <p>
-                            FIFA 22
-                        </p>
-                        <a href="">Comprar</a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href=""><img src="/img/juego2.jpg" alt=""></a>
-                    </div>
-                    <div>
-                        <p>
-                            Cuphead
-                        </p>
-                        <a href="">Comprar</a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href=""><img src="/img/juego3.jpg" alt=""></a>
-                    </div>
-                    <div>
-                        <p>
-                            Mortal Kombat XL
-                        </p>
-                        <a href="">Comprar</a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href=""><img src="/img/juego4.jpg" alt=""></a>
-                    </div>
-                    <div>
-                        <p>
-                            The Witcher 3: Wild Hunt
-                        </p>
-                        <a href="">Comprar</a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href=""><img src="/img/juego5.jpg" alt=""></a>
-                    </div>
-                    <div>
-                        <p>
-                            Grand Theft Auto V
-                        </p>
-                        <a href="">Comprar</a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href=""><img src="/img/juego6.jpg" alt=""></a>
-                    </div>
-                    <div>
-                        <p>
-                            DOOM (1993)
-                        </p>
-                        <a href="">Comprar</a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href=""><img src="/img/juego7.jpg" alt=""></a>
-                    </div>
-                    <div>
-                        <p>
-                            Hades
-                        </p>
-                        <a href="">Comprar</a>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href=""><img src="/img/juego8.jpg" alt=""></a>
-                    </div>
-                    <div>
-                        <p>
-                            Among Us
-                        </p>
-                        <a href="">Comprar</a>
-                    </div>
-                </article>
+                <div class="main-sub-articulo">
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href="#"><img src="/img/juego1.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                FIFA 22
+                            </p>
+                            <p>
+                                $5.200,00
+                            </p>
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href=""><img src="/img/juego2.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                Cuphead
+                            </p>
+                            <p>
+                                $600,00
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href=""><img src="/img/juego3.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                Mortal Kombat XL
+                            </p>
+                            <p>
+                                $2.200,00
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href="#" ><img src="/img/juego4.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                The Witcher 3: Wild Hunt
+                            </p>
+                            <p>
+                                $2.200,00
+                            </p>
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href=""><img src="/img/juego5.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                Grand Theft Auto V
+                            </p>
+                            <p>
+                                $4.200,00
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href="#" ><img src="/img/juego6.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                DOOM (1993)
+                            </p>
+                            <p>
+                                $1.200,00
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href="#"><img src="/img/juego7.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                Hades
+                            </p>
+                            <p>
+                                $3.200,00
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href=""><img src="/img/juego8.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                Among Us
+                            </p>
+                            <p>
+                                $400,00
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href="#"><img src="/img/juego1.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                FIFA 22
+                            </p>
+                            <p>
+                                $5.200,00
+                            </p>
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href=""><img src="/img/juego2.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                Cuphead
+                            </p>
+                            <p>
+                                $600,00
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href=""><img src="/img/juego3.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                Mortal Kombat XL
+                            </p>
+                            <p>
+                                $2.200,00
+                            </p>
+
+                        </div>
+                    </article>
+                    <article class="main-articulo">
+                        <div class="main-img">
+                            <a href="#"><img src="/img/juego7.jpg" alt=""></a>
+                            <div class="articulo-compra">
+                                <a href="#" >Comprar</a>
+                            </div>
+                        </div>
+                        <div class="articulo-descripcion">
+                            <p>
+                                Hades
+                            </p>
+                            <p>
+                                $3.200,00
+                            </p>
+
+                        </div>
+                    </article>
+                </div>
+                
             </main>
 
 			<footer class="footer">
