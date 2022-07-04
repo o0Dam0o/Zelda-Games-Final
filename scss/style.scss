@@ -1,32 +1,13 @@
 @import "variables";
 @import"juegos";
+@import"mixin";
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
     list-style: none;
 }
-@mixin nav {
-    padding: 0.625rem;
-    color: $color2;
-    display: block;
-    text-transform: uppercase;
-    font-weight: 400;
-    width: 100%;
-    text-align: center;
-    transition: 0.2s ease all;
-    font-size: 1.125rem;
-    &:hover{
-        background: $color2;
-        color: $color1; 
-    }   
-}
-@mixin nav_hover($color1,$color2){
-    &:hover{
-        background: $color2;
-        color: $color1;
-    }
-}
+
 
 body {
     font-family: 'Roboto Condensed', sans-serif;

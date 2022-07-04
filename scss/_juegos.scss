@@ -1,3 +1,4 @@
+@import "mixin";
 //Grid//
 .contenedorJ {
 	width: 100%;
@@ -12,7 +13,6 @@
 		"footer	 		footer 		footer";
 }
 //Navbear y Filtros//
-
 .nav-juegos{
     display: grid;
     grid-area: navbear;
@@ -23,16 +23,19 @@
     flex-direction: column;
     width: 10em;
     .nav-titulo{
+        @include titulo_border;
+
+        display:flex;
+        justify-content: center;
         margin-bottom: 10px;
         font-size: 1.5625em;
-        font-weight: 580;
-        
+        font-weight: 580;        
     }
     .nav-acordion{
         margin:10px 0;
         font-weight: 400;
         color: $color2;
-        font-size: 20px;
+        font-size: 1.25rem;
         border-top: 1px solid black;
         a{
             color: $color2;
@@ -82,17 +85,18 @@
 .main-titulo{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 1.25rem;
+    @include titulo_border;
 }
 .main-sub-articulo {
     display: flex; 
     flex-wrap: wrap;  
     
     .main-articulo{
-        height: 400px;
-        width: 200px;
+        height: 25em;
+        width: 12.5em;
         margin: 10px 15px;
         cursor: pointer;
         background-color: $color1;
@@ -104,7 +108,7 @@
             justify-content: space-evenly;
             font-weight: 400;
             color: $color2;
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         .main-img{
             position: relative;
@@ -121,7 +125,7 @@
                 margin:0px 10px; 
                 left: 0;
                 right: 0;
-                bottom: 50px;   
+                bottom: 3.125em;   
                 background-color: #f0efef; 
                 &:hover{
                     -webkit-box-shadow: inset 0px 0px 80px 18px rgba(56, 56, 56, 0.09);
@@ -131,7 +135,7 @@
                 a{
                     font-weight: 900;
                     color: $color2;
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     &::after{
                         content: "+";
                         padding-left: 5px;
@@ -141,11 +145,62 @@
                 }
             }
             img{
-                height: 300px;
-                width: 200px;
+                height: 18.75em;
+                width: 12.5em;
             }
             
         }
 
+    }
+}
+//media//
+
+@media (max-width: 1440px){
+
+}
+@media (max-width: 1024px){
+}
+@media (max-width: 768px){
+    .contenedorJ {
+        grid-template-areas:
+            "header			header   	header"
+            " navbear navbear navbear"
+            "main main main"
+            "footer	 		footer 		footer";
+    }
+    .nav-juegos{
+        margin: 0;
+        margin-top: 90px;
+        justify-content: center;
+        .nav-filtros{
+            width: 100vw;
+            .nav-acordion{
+                summary , li{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .main-juegos{
+        width: 100%;
+        .main-sub-articulo{
+            margin-left:40px;
+        }
+    }
+
+}
+@media (max-width: 425px){
+    .main-juegos{
+        .main-sub-articulo {
+            margin: 0;
+            justify-content: center;
+            .main-articulo {
+    
+                .main-img{
+                    position: unset;
+                }
+            }
+        }
     }
 }
