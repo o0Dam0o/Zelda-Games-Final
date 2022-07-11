@@ -4,7 +4,7 @@
   display: grid;
   grid-gap: 1.25em;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas: "header			header   	header" "navbear		 main 	    main" "footer	 		footer 		footer";
 }
 
@@ -191,6 +191,173 @@
   .main-juegos .main-sub-articulo .main-articulo .main-img {
     position: unset;
   }
+}
+
+.contenedorA {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-gap: 1.25em;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header			header   	header" "ayuda          ayuda       ayuda" "footer	 		footer 		footer";
+}
+
+.mainA {
+  background-image: url(../img/Servicio-al-cliente.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  display: grid;
+  grid-area: ayuda;
+  justify-content: center;
+}
+
+.mainA .mainA-titulo {
+  margin: 10px 0;
+}
+
+.buscar input {
+  padding: 5px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 1px;
+  box-shadow: -1px 0px 1px rgba(66, 66, 66, 0.58);
+  text-shadow: 0px 0px 0px rgba(66, 66, 66, 0.75);
+}
+
+.buscar input:focus {
+  outline: none;
+}
+
+.buscar .bton {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.buscar .bton:hover {
+  background-color: #f6f6f6;
+}
+
+.ArticuloAyuda {
+  margin: 1.25rem 0;
+  font-size: 1.1875rem;
+}
+
+.ArticuloAyuda .Articulo_titulo {
+  margin: 0.9375rem 0;
+}
+
+.ArticuloAyuda .articulo-caja {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 3.75rem;
+  width: 31.25rem;
+  margin-top: 2px;
+  padding-left: 5px;
+}
+
+.ArticuloAyuda .articulo-caja:hover {
+  transition: all 0.3s 0s ease;
+  border-right: 8px solid #000;
+}
+
+.ArticuloAyuda .articulo-caja p {
+  font-size: 0.9375rem;
+}
+
+.ArticuloAyuda .articulo-caja a {
+  color: #000;
+}
+
+.contenedorC {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-gap: 1.25em;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header			header   	header" "contacto       contacto    contacto" "footer	 		footer 		footer";
+}
+
+.mainC {
+  display: grid;
+  grid-area: contacto;
+  justify-content: center;
+  background-image: url(../img/Servicio-al-cliente.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.mainC-titulo {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-contacto {
+  height: 60vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-contacto input {
+  padding: 5px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 1px;
+  box-shadow: -1px 0px 1px rgba(66, 66, 66, 0.58);
+  text-shadow: 0px 0px 0px rgba(66, 66, 66, 0.75);
+}
+
+.form-contacto input:focus {
+  outline: none;
+}
+
+.form-contacto .bton {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.form-contacto .bton:hover {
+  background-color: #f6f6f6;
 }
 
 * {

@@ -1,0 +1,64 @@
+.contenedorA {
+	width: 100%;
+	max-width: 100%;
+	display: grid;
+	grid-gap: 1.25em;
+	grid-template-columns: repeat(3,auto);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		"header			header   	header"
+        "ayuda          ayuda       ayuda"
+		"footer	 		footer 		footer";
+        
+}
+.mainA{
+    background-image: url(../img/Servicio-al-cliente.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    display: grid;
+    grid-area: ayuda;
+    justify-content: center;
+    .mainA-titulo{
+        margin: 10px 0;
+    }
+}
+.buscar{
+    input{
+        @include input;
+    }
+    .bton{
+        @include bton;
+    }
+}
+.ArticuloAyuda{
+    margin: 1.25rem 0;
+    font-size: 1.1875rem;
+    .Articulo_titulo{
+        margin: 0.9375rem 0;
+    }
+    .articulo-caja{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        background-color: $color1;
+        border-radius: 5px;
+        height: 3.75rem;
+        width: 31.25rem;
+        margin-top: 2px;
+        padding-left: 5px;
+        &:hover{
+            transition: all 0.3s 0s ease;
+            border-right: 8px solid $color2;
+
+        }
+
+        p{
+            font-size: 0.9375rem;
+        }
+        a{
+            color: $color2;
+        }
+
+    }
+}

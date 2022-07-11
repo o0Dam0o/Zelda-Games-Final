@@ -1,0 +1,43 @@
+.contenedorC {
+	width: 100%;
+	max-width: 100%;
+	display: grid;
+	grid-gap: 1.25em;
+	grid-template-columns: repeat(3,auto);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		"header			header   	header"
+        "contacto       contacto    contacto"
+		"footer	 		footer 		footer";
+}
+
+.mainC{
+    display: grid;
+    grid-area: contacto;
+    justify-content: center;
+    background-image: url(../img/Servicio-al-cliente.png);
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+.mainC-titulo{
+    display: flex;
+    justify-content: center;
+    background-color: $color2;
+    color: $color1;
+    border-radius: 5px;
+}
+.form-contacto{
+    height: 60vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    input{
+        @include input;
+    }
+    .bton{
+        @include bton;
+
+    }
+}
