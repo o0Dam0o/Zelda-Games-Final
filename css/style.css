@@ -288,6 +288,15 @@
   color: #000;
 }
 
+@media (max-width: 425px) {
+  .mainA {
+    margin-top: 90px;
+  }
+  .ArticuloAyuda .articulo-caja {
+    width: inherit;
+  }
+}
+
 .contenedorC {
   width: 100%;
   max-width: 100%;
@@ -358,6 +367,15 @@
 
 .form-contacto .bton:hover {
   background-color: #f6f6f6;
+}
+
+@media (max-width: 425px) {
+  .mainC {
+    margin-top: 90px;
+  }
+  .form-contacto {
+    width: 90vw;
+  }
 }
 
 * {
