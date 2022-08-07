@@ -100,6 +100,7 @@
         margin: 10px 15px;
         cursor: pointer;
         background-color: $color1;
+        
         .articulo-descripcion{
             height:80px;
             display: flex;
@@ -109,6 +110,7 @@
             font-weight: 400;
             color: $color2;
             font-size: 1.25rem;
+
         }
         .main-img{
             position: relative;
@@ -117,6 +119,21 @@
                 .articulo-compra{
                     display:flex ;
                 }
+            }
+            &:hover{
+                .descripcion-oculta{
+                    display: flex;
+;
+        
+                }
+            }
+            .descripcion-oculta{
+                display: none;
+                overflow: hidden;
+                background-color: #ffffff;
+                font-size: 1rem;
+                font-weight: 400;
+
             }
             .articulo-compra{
                 width: 90%;

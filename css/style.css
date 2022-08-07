@@ -127,6 +127,18 @@
   display: flex;
 }
 
+.main-sub-articulo .main-articulo .main-img:hover .descripcion-oculta {
+  display: flex;
+}
+
+.main-sub-articulo .main-articulo .main-img .descripcion-oculta {
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .main-sub-articulo .main-articulo .main-img .articulo-compra {
   width: 90%;
   display: none;
