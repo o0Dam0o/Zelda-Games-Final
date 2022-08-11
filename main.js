@@ -301,17 +301,7 @@ function caja(opc1) {
 	}
 }
 //Funcion Creada porque se me hacia muy repetitiva
-function agregarCarrito(resultado) {
-	resultado.forEach((art) => {
-		let agregar = prompt(
-			`Nombre del Articulo : ${art.nombre}\nDescripcio del Articulo : ${art.descripcion}\nPrecio del Articulo : $${art.precio}\nCategoria : ${art.categoria}\n\nSumar al Carrito :\n-Si\n-No`
-		);
-		if (agregar.toLowerCase() == "si") {
-			carrito.push(art);
-		}
-		console.log(carrito);
-	});
-}
+
 function vender() {
 	let opc = parseInt(
 		prompt(`
@@ -391,36 +381,57 @@ function menu() {
 		}
 	}
 }
+
 const contenedor = document.getElementById("java");
 console.log(contenedor);
 productos.forEach((producto) => {
 	console.log(contenedor);
 	const article = document.createElement("article");
-	article.classList.add("main-articulo");
+	article.classList.add("main-productos");
 	console.log(article);
 	//Definimos el innerHTML del elemento con una plantilla de texto
 	article.innerHTML = `
-                    <div class="main-img">
-                        <a href=""><img src=${producto.img} alt="Cuphead-free"></a>
-                        <div class="articulo-compra">
-                            <a href="#">Comprar</a>
-                        </div>
-                        <div class="descripcion-oculta">
-                            <p class="descripcion-oculta">
-                                ${producto.descripcion}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="articulo-descripcion">
-                        <p>
-                            ${producto.nombre}
-                        </p>
-                        <p>
-                            $${producto.precio}
-                        </p>
-                    </div>
-    
+	<div class="main-img">
+	<a href=""><img src=${producto.img} alt="Cuphead-free"></a>
+	<div class="articulo-descripcion">
+		<p>
+			${producto.nombre}
+		</p>
+		<p>
+			$${producto.precio}
+		</p>
+		<button type="button" name="Comprar" class="btonComprar">Comprar</button>
+
+	</div>
+</div>
+<div id="sub-descripcion">
+	<p class="descripcion-oculta">
+	<h3>Descripcion</h3>
+	${producto.descripcion}
+	</p>
+</div>
+
 `;
 	contenedor.appendChild(article);
 	console.log(article);
 });
+//Agrega la cantidad de Productos Comprados en carrito , Despues voy a Crear la Pagina Carrito
+let btonCompra = document.getElementsByClassName("btonComprar");
+console.log(btonCompra);
+let sumar = 0;
+for (let art of btonCompra) {
+	art.addEventListener("click", () => {
+		sumar = sumar + 1;
+		document.getElementById("Carrito").textContent = sumar;
+	});
+}
+
+let filtro = document.getElementsByClassName("nombre");
+for (let art of filtro) {
+	art.addEventListener("click", console.log(art.innerHTML));
+}
+function prac(art) {
+	if (art.innerHTML == "AMD") {
+		console.log("AMD");
+	}
+}
